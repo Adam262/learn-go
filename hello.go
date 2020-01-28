@@ -5,6 +5,8 @@ import (
 	"math"
 
 	// Install local package
+
+	"github.com/user/hello/loops"
 	"github.com/user/hello/mathstuff"
 	"github.com/user/hello/morestrings"
 
@@ -25,6 +27,25 @@ func main() {
 
 	fmt.Printf("The square root of %d is %g \n", 9, math.Sqrt(9))
 
-	sum := mathstuff.Add(2, 5)
-	fmt.Printf("The sum of x + y is %d \n", sum)
+	// var keyword variable declaration with explicit type + initial value
+	var x int = 2
+
+	// var keyword variable declaration with explicit type but no initial value
+	var y int
+	y = 5
+
+	// short form variable declaration with implicit type.
+	// short form is only available within a function
+	sum := mathstuff.Add(x, y)
+	fmt.Printf("The sum of %d + %d is %d \n", x, y, sum)
+
+	swappedX, swappedY := mathstuff.Swap(x, y)
+	fmt.Printf("The swap of %d + %d is %d %d \n", x, y, swappedX, swappedY)
+
+	start := 1
+	stop := 10
+	fmt.Printf("The sum of 1 to 10 with a for loop is %d \n", loops.ForLoop(start, stop))
+	fmt.Printf("The sum of 1 to 10 with a while loop is %d \n", loops.WhileLoop(start, stop))
+
+	mathstuff.SqRt(9.0)
 }
