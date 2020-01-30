@@ -9,6 +9,7 @@ import (
 	"github.com/user/hello/loops"
 	"github.com/user/hello/mathstuff"
 	"github.com/user/hello/morestrings"
+	"github.com/user/hello/pointers"
 
 	// Install remote package
 	"github.com/google/go-cmp/cmp"
@@ -48,4 +49,11 @@ func main() {
 	fmt.Printf("The sum of 1 to 10 with a while loop is %d \n", loops.WhileLoop(start, stop))
 
 	mathstuff.SqRt(9.0)
+
+	// defer will not run until surrounding function returns
+	// they can be stacked and called in LIFO order
+	defer fmt.Println("World")
+	defer fmt.Println("Hello")
+
+	pointers.PrintExamples()
 }
