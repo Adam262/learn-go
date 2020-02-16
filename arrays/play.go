@@ -2,7 +2,7 @@ package arrays
 
 import "fmt"
 
-func PrintExamples() {
+func Main() {
   // arrays are fixed size
   var a [2]string
   a[0] = "zero"

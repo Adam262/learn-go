@@ -3,12 +3,12 @@ package structs
 import "fmt"
 
 type Athlete struct {
-  FirstName string
-  LastName string
+  FirstName   string
+  LastName    string
   Nationality string
 }
 
-func PrintExamples() {
+func Main() {
   a := Athlete{"Usain", "Bolt", ""}
   p := &a
   p.Nationality = "Jamaican"
