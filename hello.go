@@ -3,8 +3,8 @@ package main
 import (
   "fmt"
 
-  // Install local packages
   "github.com/user/hello/arrays"
+  "github.com/user/hello/loops"
   "github.com/user/hello/mathstuff"
   "github.com/user/hello/morestrings"
   "github.com/user/hello/pointers"
@@ -18,6 +18,8 @@ func main() {
   defer fmt.Println("Deferred Hello")
 
   arrays.Main()
+
+  loops.Main()
 
   mathstuff.Main()
 

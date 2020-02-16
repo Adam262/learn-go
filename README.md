@@ -24,6 +24,11 @@ go build hello.go
 ## Packages
 Go programs are organized into packages. A package is a collection of source files in the same directory that are compiled together. Functions, types, variables, and constants defined in one source file are visible to all other source files within the same package.
 
+## Sublime Packages Installed
+* Gofmt
+* Golang Config
+* Goimports
+
 ```go
 // Fetch external package via CLI
 go get golang.org/x/tour

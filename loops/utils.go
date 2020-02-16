@@ -1,23 +1,34 @@
 package loops
 
-func ForLoop(start int, stop int) (sum int) {
-	sum = 0
+func SumForLoop(start int, stop int) (sum int) {
+  sum = 0
 
-	for x := start; x <= stop; x++ {
-		sum += x
-	}
+  for x := start; x <= stop; x++ {
+    sum += x
+  }
 
-	return
+  return
 }
 
-func WhileLoop(start int, stop int) (sum int) {
-	sum = 0
-	x := start
+func SumWhileLoop(start int, stop int) (sum int) {
+  sum = 0
+  x := start
 
-	for x <= stop {
-		sum += x
-		x += 1
-	}
+  for x <= stop {
+    sum += x
+    x += 1
+  }
 
-	return
+  return
+}
+
+func SumRange(coolRange []int) (sum int) {
+  sum = 0
+
+  // i is optional index
+  for _, v := range coolRange {
+    sum += v
+  }
+
+  return
 }

@@ -2,8 +2,6 @@ package mathstuff
 
 import (
   "fmt"
-
-  "github.com/user/hello/loops"
 )
 
 func Main() {
@@ -21,11 +19,6 @@ func Main() {
 
   swappedX, swappedY := Swap(x, y)
   fmt.Printf("The swap of %d + %d is %d %d \n", x, y, swappedX, swappedY)
-
-  start := 1
-  stop := 10
-  fmt.Printf("The sum of 1 to 10 with a for loop is %d \n", loops.ForLoop(start, stop))
-  fmt.Printf("The sum of 1 to 10 with a while loop is %d \n", loops.WhileLoop(start, stop))
 
   SqRt(9.0)
 }
