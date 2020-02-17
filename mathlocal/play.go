@@ -1,4 +1,4 @@
-package mathstuff
+package mathlocal
 
 import (
   "fmt"

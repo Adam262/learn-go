@@ -1,6 +1,8 @@
 package arrays
 
-import "fmt"
+import (
+  "fmt"
+)
 
 func Main() {
   // arrays are fixed size
@@ -62,4 +64,6 @@ func Main() {
     len(makeSlice),
     cap(makeSlice),
   )
+
+  // pic.Show(Pic)
 }

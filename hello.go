@@ -3,7 +3,14 @@ package main
 import (
   "fmt"
 
+  "github.com/user/hello/arrays"
+  "github.com/user/hello/funcs"
+  "github.com/user/hello/loops"
   "github.com/user/hello/maps"
+  "github.com/user/hello/mathlocal"
+  "github.com/user/hello/pointers"
+  "github.com/user/hello/stringslocal"
+  "github.com/user/hello/structs"
 )
 
 func main() {
@@ -12,17 +19,19 @@ func main() {
   defer fmt.Println("Deferred World")
   defer fmt.Println("Deferred Hello")
 
-  // arrays.Main()
+  arrays.Main()
 
-  // loops.Main()
+  funcs.Main()
+
+  loops.Main()
 
   maps.Main()
 
-  // mathstuff.Main()
+  mathlocal.Main()
 
-  // morestrings.Main()
+  stringslocal.Main()
 
-  // pointers.Main()
+  pointers.Main()
 
-  // structs.Main()
+  structs.Main()
 }
