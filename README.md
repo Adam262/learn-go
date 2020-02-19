@@ -1,4 +1,17 @@
-Some Go Tutorials
+Some Go Tutorials 
+
+# Getting Started
+This code is my playground based on examples at https://tour.golang.org/list
+
+To run the `hello` entrypoint:
+#### Simple way
+`go run hello.go`
+
+#### Better way
+Follow below steps to:
+* set GOPATH and place on PATH
+* compile and install `hello.go` package
+* run entrypoint via `hello`
 
 # Using modules and packages
 Source is https://golang.org/doc/code.html
@@ -16,8 +29,7 @@ export PATH="$PATH:${GOPATH//://bin:}/bin"
 A repository contains one or more modules. A module is a collection of related Go packages that are released together. A Go repository typically contains only one module, located at the root of the repository. A file named go.mod there declares the module path: the import path prefix for all packages within the module. The module contains the packages in the directory containing its go.mod file as well as subdirectories of that directory, up to the next subdirectory containing another go.mod file (if any).
 
 ```go
-// Build compiles the packages named by the import paths,
-along with their dependencies, but it does not install the results
+// Build compiles the packages named by the import paths, along with their dependencies, but it does not install the results
 go build hello.go
 ```
 
