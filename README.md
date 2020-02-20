@@ -7,10 +7,16 @@ To run the `hello` entrypoint:
 #### Simple way
 `go run hello.go`
 
-#### Better way
-Follow below steps to:
+#### As PATH executable
+Follow below steps:
 * set GOPATH and place on PATH
-* compile and install `hello.go` package
+
+```
+export GOPATH=/home/alex/Code/go
+export PATH=$PATH:$GOPATH/bin
+```
+
+* run `go install hello.go`
 * run entrypoint via `hello`
 
 # Using modules and packages
@@ -38,8 +44,23 @@ Go programs are organized into packages. A package is a collection of source fil
 
 ## Sublime Packages Installed
 * Gofmt
-* Golang Config
-* Goimports
+* Golang Build
+
+## Getting `Goimports` to run automatically in Sublime Text
+Thank you https://www.alexedwards.net/blog/streamline-your-sublime-text-and-go-workflow!
+
+* Install Gofmt Sublime packages
+* Install Goimports from command line: `go get golang.org/x/tools/cmd/goimports`
+* In Gofmt Settings-User, add:
+```
+{
+  "cmds": [
+    ["goimports"]
+  ],
+  "format_on_save": true
+}
+```
+* Restart Sublime
 
 ```go
 // Fetch external package via CLI
