@@ -9,6 +9,7 @@ import (
   "github.com/user/hello/maps"
   "github.com/user/hello/mathlocal"
   "github.com/user/hello/pointers"
+  "github.com/user/hello/regexplocal"
   "github.com/user/hello/stringslocal"
   "github.com/user/hello/structs"
 )
@@ -29,9 +30,13 @@ func main() {
 
   mathlocal.Main()
 
-  stringslocal.Main()
-
   pointers.Main()
+
+  regexplocal.Main()
+
+  stringslocal.Main()
 
   structs.Main()
 }
+
+// Concurrence - channels
