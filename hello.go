@@ -3,15 +3,7 @@ package main
 import (
   "fmt"
 
-  "github.com/user/hello/arrays"
-  "github.com/user/hello/funcs"
-  "github.com/user/hello/loops"
-  "github.com/user/hello/maps"
-  "github.com/user/hello/mathlocal"
-  "github.com/user/hello/pointers"
-  "github.com/user/hello/regexplocal"
-  "github.com/user/hello/stringslocal"
-  "github.com/user/hello/structs"
+  "github.com/user/hello/interfaces"
 )
 
 func main() {
@@ -20,23 +12,27 @@ func main() {
   defer fmt.Println("Deferred World")
   defer fmt.Println("Deferred Hello")
 
-  arrays.Main()
+  // arrays.Main()
 
-  funcs.Main()
+  // funcs.Main()
 
-  loops.Main()
+  interfaces.Main()
 
-  maps.Main()
+  // loops.Main()
 
-  mathlocal.Main()
+  // maps.Main()
 
-  pointers.Main()
+  // mathlocal.Main()
 
-  regexplocal.Main()
+  // methods.Main()
 
-  stringslocal.Main()
+  // pointers.Main()
 
-  structs.Main()
+  // regexplocal.Main()
+
+  // stringslocal.Main()
+
+  // structs.Main()
 }
 
 // Concurrence - channels
