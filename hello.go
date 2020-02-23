@@ -3,7 +3,7 @@ package main
 import (
   "fmt"
 
-  "github.com/user/hello/interfaces"
+  "github.com/user/hello/concurrency"
 )
 
 func main() {
@@ -14,9 +14,11 @@ func main() {
 
   // arrays.Main()
 
+  concurrency.Main()
+
   // funcs.Main()
 
-  interfaces.Main()
+  // interfaces.Main()
 
   // loops.Main()
 
