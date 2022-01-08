@@ -16,4 +16,12 @@ func Main() {
 	fmt.Println(Is_valid_ip_hard_way("1.1.1.256"))
 	fmt.Println(Is_valid_ip_hard_way("1.1.1.255.1"))
 	fmt.Println(Is_valid_ip_hard_way("1.a.1.255"))
+
+	fmt.Println(EncryptThis(""))
+	fmt.Println(EncryptThis("A wise old owl lived in an oak"))
+	fmt.Println(EncryptThis("The more he saw the less he spoke"))
+	fmt.Println(EncryptThis("The less he spoke the more he heard"))
+	fmt.Println(EncryptThis("Why can we not all be like that wise old bird"))
+	fmt.Println(EncryptThis("Thank you Piotr for all your help"))
+
 }
