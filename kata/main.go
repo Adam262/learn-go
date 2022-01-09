@@ -24,4 +24,7 @@ func Main() {
 	fmt.Println(EncryptThis("Why can we not all be like that wise old bird"))
 	fmt.Println(EncryptThis("Thank you Piotr for all your help"))
 
+	fmt.Println(ListSquared(1, 250))
+	fmt.Println(ListSquared(250, 500))
+	fmt.Println(ListSquared(300, 600))
 }
