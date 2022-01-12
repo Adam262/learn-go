@@ -27,4 +27,14 @@ func Main() {
 	fmt.Println(ListSquared(1, 250))
 	fmt.Println(ListSquared(250, 500))
 	fmt.Println(ListSquared(300, 600))
+
+	s := NewStringStack()
+	s.Push("a")
+	s.Push("b")
+	s.Push("c")
+	s.Pop()
+	s.Pop()
+	s.Pop()
+	s.Pop()
+	fmt.Println(s.Size())
 }
